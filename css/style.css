@@ -1,5 +1,84 @@
-body {
-    background-color: antiquewhite;
-    margin: 50px 50px 0px 50px;
-    
+body{
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.header{
+    font-size: 7.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: rgb(220, 220, 13);
+
+}
+
+.grid {
+
+    margin:2rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+    grid-gap:3rem;
+    justify-content:center;
+   
+}
+
+.header {
+    display: block;
+    text-align: center;
+}
+
+.card {
+    background-color: aliceblue;
+    overflow: hidden;
+    box-shadow: 0px 2px 20px rgb(29, 29, 29);
+    border-radius: 4px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+}
+
+
+ .card__image{
+        height: 12rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+.card__title {
+    margin-top: -4px;
+    padding: 1rem;
+    background-color: yellowgreen;
+    
+    
+    
+}  
+
+.card__description{
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.card__btn {
+    padding:1rem;
+    font-weight:bold;
+    font-size:1rem;
+    margin:1rem;
+    border:2px solid yellowgreen;
+    background: transparent;
+    color:rgb(5, 5, 5);
+    border-radius:2 px;
+    transition: background 200ms ease-in, color 200ms ease-in;
+    }
+
+.card:hover{
+        transform:scale(1.05);
+    }
+
+.card__btn:hover{
+    background-color: yellowgreen;
+    color: white;
+}
+    
+}       
